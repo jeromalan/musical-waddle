@@ -4,7 +4,7 @@ A Telegram bot that can stream Telegram files to users over HTTP.
 
 ## Setup
 Install dependencies (see [requirements.txt](/requirements.txt)), configure
-environment variables (see below) and run with `python3 -m tgfilestream`.
+environment variables (see below) and run with `python3 -m Draxscreenshotstream`.
 
 A reverse proxy is recommended to add TLS. When using a reverse proxy, keep
 `HOST` as-is, but add the publicly accessible URL to `PUBLIC_URL`. The URL
@@ -26,7 +26,3 @@ should include the protocol, e.g. `https://example.com`.
 * `LOG_CONFIG` - Path to a Python basic log config. Overrides `DEBUG`.
 * `REQUEST_LIMIT` (default 5) - The maximum number of requests a single IP can have active at a time.
 * `CONNECTION_LIMIT` (default 20) - The maximum number of connections to a single Telegram datacenter.
-
-## Thanks
-
-Thanks to [Tulir Asokan](https://github.com/tulir "Tulir Asokan") for his [TgFileStream](https://github.com/tulir/tgfilestream "TgFileStream") Bot.
